@@ -10,6 +10,7 @@ Similar to Expor, we have BrowserSync dev server and LocalTunnel Remote Dev Envi
 ### LocalTunnel
 
 `lt --port 3000 --subdomain ayman`
+
 Works on different devices.
 Works on diffeent networks too.
 Hot Reloading present
