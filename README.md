@@ -33,11 +33,11 @@ In scripts object, pre(name) will run before (name) and likewise for post. Follo
 
 # Transpiling
 
-# Typescript
+## Typescript
 
-# Babel
+## Babel
 
-## Configuration Styles
+### Configuration Styles
 
 ### `.bashrc`
 1. Not npm specific
