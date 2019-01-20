@@ -1,10 +1,10 @@
-# JSWorkFlow
+# JSWorkFlow: [Source](https://app.pluralsight.com/library/courses/javascript-development-environment/table-of-contents)
 
 
 ## Development Web Server
 
 
-Similar to Expor, we have BrowserSync dev server and LocalTunnel Remote Dev Environment
+Similar to Expo, we have BrowserSync dev server and LocalTunnel Remote Dev Environment
 ### Browser Sync 
 
 ### LocalTunnel
