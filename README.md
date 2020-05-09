@@ -1,4 +1,4 @@
-# JSWorkFlow: [Source](https://app.pluralsight.com/library/courses/javascript-development-environment/table-of-contents)
+# JSWorkFlow Pluralsight: [Source](https://app.pluralsight.com/library/courses/javascript-development-environment/table-of-contents)
 
 
 ## Development Web Server
