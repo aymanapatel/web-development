@@ -1,6 +1,18 @@
 # JSWorkFlow Pluralsight: [Source](https://app.pluralsight.com/library/courses/javascript-development-environment/table-of-contents)
 
 
+# Table of Contents
+
+- [Development Web Server](development-web-server)
+- [Automation](#automation)
+- [Transpiling](#transpiling)
+- [Linting](#linting)
+- [Testing](#testing)
+- [HTTP Calls](#http-calls)
+- [Project Strucutre](#project-structure)
+- [Production Build](#production-build)
+- [Production Deploy](#production-deploy)
+
 ## Development Web Server
 
 
@@ -262,6 +274,7 @@ Why?
 - Handle Errors
 - Single Line of code for mocking API
 
+
 ## Polyfill
 
 You can add polyfill script tag (polyfill.io) on top of iindex.html to add polyfill
@@ -310,7 +323,7 @@ Randomized catches real-world scenarios and edge cases
 5. Filtering
 6. Sorting
 
-# Project Structure To be done
+# Project Structure [To be done]
 
 
 # Production Build
