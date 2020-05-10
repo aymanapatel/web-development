@@ -21,7 +21,7 @@ Hot Reloading present
 - Configuration over Code
 Which means tasks is written as a JSON file.
 
-## Grunt
+## Gulp
 - Code over Configuration
 Which means tasks are written as a JS File.
 
