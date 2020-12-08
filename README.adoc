@@ -217,29 +217,43 @@ Prettier formats code on save. EditorConfig formats on cursor as you go.
 ==== 1. Framework
 
 
-- Mocha
+- https://github.com/mochajs/mocha[Mocha]
+
 Mocha is more configurable than Jasmine
-- Jasmine
-- Tape
-- Simple and minimal
-- QUnit
-- AVA
-- New, runs **PARALLEL TESTS**
-- Jest
-- Part of React community.
-- Wrapper over Jasmine, making it suitable for versatile usage.
+
+- https://github.com/jasmine/jasmine[Jasmine]
+
+- https://github.com/substack/tape[Tape]
+
+    - Simple and minimal
+    - Very simple API that doesn't require globals, or monkey patching objects for assertions.
+    
+- https://github.com/qunitjs/qunit[QUnit]
+    - Testing framework for jQuery
+
+- https://github.com/avajs/ava[AVA]
+    - New, runs **PARALLEL TESTS**
+    
+- https://github.com/facebook/jest[Jest]
+    - Part of React community.
+    - Wrapper over Jasmine, making it suitable for versatile usage.
 
 ==== 2. Assertion Library
+
 Declare what you expect.
 Mocha doesn't come with Assertions(Others do), so need to incorporate outside library.
 - Chai
--Best
+    - Best
+    
 - Should.js
+
 #### 3. Helper Libraries
+
 1. JSDOM
 - Run DOM-related test without server
 2. Cheerio
 - Query virtual DOM using jQuery selectors
+
 #### 4. Where to run tests
 1. Browsers
 - Karma, Testem
