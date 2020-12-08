@@ -6,7 +6,7 @@
 toc::[]
 
 
-image::../img/bundle.png[Bundle]
+image::../img/bundle.PNG[Bundle]
 
 NOTE: Check this https://bundlers.tooling.report/[link] for consolidated information of all build tools.
 
