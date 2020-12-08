@@ -19,13 +19,19 @@ Works on different devices.
 Works on diffeent networks too.
 Hot Reloading present
 
+=== https://ngrok.com/[ngrok]
+
+ngrok secure introspectable tunnels to localhost webhook development tool and debugging tool
+
+NOTE: Not secure
+
 == Automation
 
-=== Grunt
+=== Grunt (Legacy)
 - Configuration over Code
 Which means tasks is written as a JSON file.
 
-=== Gulp
+=== Gulp  (Legacy)
 - Code over Configuration
 Which means tasks are written as a JS File.
 
@@ -51,7 +57,7 @@ In scripts object, pre(name) will run before (name) and likewise for post. Follo
 
 == Bundling
 
-NOTE: Check this https://bundlers.tooling.report/[Link] for consolidation of all web tools.
+NOTE: Check this https://bundlers.tooling.report/[Link] for consolidated information of all build tools.
 
 
 
@@ -183,6 +189,19 @@ Supporting experimental JS features.
 - `/*eslint-disabble <rule>*/`
 - Disable lint for that rule
 
+== Code Fomating
+
+*Linting + Code Formatting = Made in Heaven*
+
+=== Prettier
+
+=== EditorConfig
+
+=== Prettier vs EditorConfig
+
+Prettier formats code on save. EditorConfig formats on cursor as you go.
+
+=== ESLint + Prettier + EditorConfig example
 
 == Testing
 
