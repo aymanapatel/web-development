@@ -5,6 +5,8 @@
 
 toc::[]
 
+NOTE: Check `original-copy` for original Pluralsight repo
+
 == Development Web Server
 
 
