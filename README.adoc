@@ -1,4 +1,4 @@
-= Bootstrapping web applications (Node_
+= Bootstrapping web applications (Node)
 :toc:
 :toclevels: 4
 :icons: font
@@ -13,12 +13,6 @@ NOTE: Check https://github.com/aymanapatel/Web-Development-Bootstrapping/tree/or
 
 == Automation
 
-
-=== npm scripts
-
-==== Pre/Post Hooks
-
-In scripts object, pre(name) will run before (name) and likewise for post. Follows the convention.
 
 == Transpiling
 
