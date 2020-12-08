@@ -79,7 +79,13 @@ SourceMaps only in DevTools, hence not delivered to users, minimising JS bundle 
 
 === JSPM
 
-== Linting
+
+== Linters
+
+- JSLint
+- Highly opinionated
+- JSHint
+- ESLint
 
 === Why Linting?
 
@@ -93,14 +99,6 @@ SourceMaps only in DevTools, hence not delivered to users, minimising JS bundle 
 3. Assignment in conditional statements
 4. Missing defalult case in SWITCH STATEMENT
 5. Accidental console.log
-
-== Linters
-
-- JSLint
-- Highly opinionated
-- JSHint
-- ESLint
-
 
 === ESLINT
 ESLint is built for making your own decisions
