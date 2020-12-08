@@ -1,0 +1,22 @@
+= Transpiling
+:toc:
+:toclevels: 4
+:icons: font
+
+toc::[]
+
+
+
+
+== Typescript
+
+== Babel
+
+=== Configuration Styles 1. `.babelrc`
+
+1. Not npm specific
+2. Since it is isolated, it is easier to read.
+
+=== Configuration Styles 2. `.package.json`
+1. One less file
+

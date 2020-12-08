@@ -1,0 +1,22 @@
+= Automation
+:toc:
+:toclevels: 4
+:icons: font
+
+toc::[]
+
+== npm scripts
+
+=== Pre/Post Hooks
+
+In scripts object, pre(name) will run before (name) and likewise for post. Follows the convention.
+
+
+== Grunt (Legacy)
+- Configuration over Code
+Which means tasks is written as a JSON file.
+
+== Gulp  (Legacy)
+- Code over Configuration
+Which means tasks are written as a JS File.
+

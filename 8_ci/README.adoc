@@ -1,0 +1,16 @@
+= CI
+:toc:
+:toclevels: 4
+:icons: font
+
+toc::[]
+
+
+
+
+
+== Travis CI
+- Linux/Mac
+
+== Appveyor
+- Windows

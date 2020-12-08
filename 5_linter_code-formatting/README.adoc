@@ -1,0 +1,123 @@
+= Linters and Code Formatting
+:toc:
+:toclevels: 4
+:icons: font
+
+toc::[]
+
+== Linters
+
+- JSLint
+- Highly opinionated
+- JSHint
+- ESLint
+
+=== Why Linting?
+
+-  Enforce Consistency
+1. GLobals
+2. Trailing/ending commas
+3. Curly brace position
+-  Avoid Mistakes
+1. Overwriting function
+2. Extra paranthesis
+3. Assignment in conditional statements
+4. Missing defalult case in SWITCH STATEMENT
+5. Accidental console.log
+
+=== ESLINT
+ESLint is built for making your own decisions
+
+1. Config Format?
+2. Which built-in rules?
+3. Warning or Errors?
+4. Which plugins?
+- Based on framework
+5. Use preset if you can't amke your own decision?
+
+==== 1. Config Format?
+
+
+
+1. Seperate config file : `eslint.rc`
+
+2. `package.json` file
+
+- `"eslintConfig":{"plugins:["example"],"env":{"example/custom"}:true}}`
+
+==== 2. Which built-in rules?
+
+https://eslint.org/docs/rules/[List of available rules]
+
+==== 3. Warning or Errors?
+- Warning
+1. Can continue working
+2. Can be ignored
+3. Team must agree: Fix warnings
+- Error
+1. Breaks build
+2. Cannot be ignored
+3. Team is forced to comply
+
+==== 4. Which plugins?
+- Based on framework : https://github.com/dustinspecler/awesome-eslint[List of ESLint configs, plugins etc]
+
+==== 5. Use preset
+If you can't make your own decision, then use a **preset**.
+But remember, presets brings OPINIONETED linting.
+
+
+==== Watching ESLint files
+
+- eslint-loader
+1. Re-lint all files upon save
+2. Tied to **webpack**
+- eslint-watch
+1. Not tied to **webpack**
+2. ESLint Wrapper which adds to file watch
+3. Better warning/error formatting
+4. Easily lints **Tests** and **build scripts**
+5. Displays clean message
+
+==== Linting experimental features
+
+Supporting experimental JS features.
+- Native ESLInt
+- Supports ES5, ES6
+- Supports object space
+- babel-eslint
+- Support experimental JS feature
+
+==== ESLint Workflow
+
+- ESLint recommended rules.(Can configure according to your needs)
+- eslint-watch
+`esw`
+
+==== `.eslintrc.json`
+`.eslintrc.json`:
+
+- `rules.no-console:` (An example)
+1. For `0` : No output
+2. For `1` : Warning
+3. For `2` : Error
+
+- `.js` files
+- `/*eslint-disable-line <rule>*/`
+- Disable lint for that line and rule.
+- `/*eslint-disabble <rule>*/`
+- Disable lint for that rule
+
+== Code Fomating
+
+*Linting + Code Formatting = Made in Heaven*
+
+=== Prettier
+
+=== EditorConfig
+
+=== Prettier vs EditorConfig
+
+Prettier formats code on save. EditorConfig formats on cursor as you go.
+
+=== ESLint + Prettier + EditorConfig example

@@ -1,0 +1,81 @@
+= Testing
+:toc:
+:toclevels: 4
+:icons: font
+
+toc::[]
+
+== Unit Testing Decisions
+
+1. Framework (Mocha)
+2. Assertion Library (Chai)
+3. Helper Libraries (JSDOM)
+4. Where to run tests (Node)
+5. Where to place tests (Alongside)
+6. When to run tests (Upon save)
+
+=== 1. Framework
+
+
+- https://github.com/mochajs/mocha[Mocha]
+
+Mocha is more configurable than Jasmine
+
+- https://github.com/jasmine/jasmine[Jasmine]
+
+- https://github.com/substack/tape[Tape]
+
+    - Simple and minimal
+    - Very simple API that doesn't require globals, or monkey patching objects for assertions.
+    
+- https://github.com/qunitjs/qunit[QUnit]
+    - Testing framework for jQuery
+
+- https://github.com/avajs/ava[AVA]
+    - New, runs **PARALLEL TESTS**
+    
+- https://github.com/facebook/jest[Jest]
+    - Part of React community.
+    - Wrapper over Jasmine, making it suitable for versatile usage.
+
+=== 2. Assertion Library
+
+Declare what you expect.
+Mocha doesn't come with Assertions(Others do), so need to incorporate outside library.
+- Chai
+    - Best
+    
+- Should.js
+
+=== 3. Helper Libraries
+
+1. JSDOM
+- Run DOM-related test without server
+2. Cheerio
+- Query virtual DOM using jQuery selectors
+
+=== 4. Where to run tests
+1. Browsers
+- Karma, Testem
+2. Headless browser (Browser without UI.)
+- PhantomJS (Runs V8 engine).
+3. In-memory DOM
+- JSDOM (Faster htan PhantomJS)
+
+=== 5. Where to place tests
+
+|===
+| Centralized  | Alongside(Use this)
+
+|  Less "noise" in src folder | Imports are easier since no lengthy directories
+| Can remove in deployment if you want to | Clear visibility within Folder
+|   |  Convenient to open
+|No recreating folder structure|
+|===
+
+=== 6. When to run tests
+- Rapid feedback
+- Facilitates TDD
+- Automated = Less friction
+- Increases test visibility
+s
