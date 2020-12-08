@@ -5,6 +5,8 @@
 
 toc::[]
 
+image::../img/grunt_vs_gulp.png[grunt_vs_gulp]
+
 == npm scripts
 
 === Pre/Post Hooks

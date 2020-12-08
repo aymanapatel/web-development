@@ -5,6 +5,8 @@
 
 toc::[]
 
+image::../img/lint.png[TDD]
+
 == Linters
 
 - JSLint

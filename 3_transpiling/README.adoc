@@ -5,7 +5,7 @@
 
 toc::[]
 
-
+image::../img/trans.png[Transpiling]
 
 
 == Typescript

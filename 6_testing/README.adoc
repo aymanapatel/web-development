@@ -5,6 +5,8 @@
 
 toc::[]
 
+image::../img/tdd.png[TDD]
+
 == Unit Testing Decisions
 
 1. Framework (Mocha)

@@ -4,3 +4,25 @@
 :icons: font
 
 toc::[]
+
+== JAM Stack
+
+
+
+
+image::../img/jamstack.jpg[JAM Stack]
+
+
+=== Primer
+
+
+1. Javadcript
+
+2. API
+
+3. Markup
+
+
+=== Netlify
+
+

@@ -7,7 +7,7 @@ toc::[]
 
 
 
-
+image::../img/ci.jpg[CI]
 
 == Travis CI
 - Linux/Mac
