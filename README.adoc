@@ -97,7 +97,7 @@ SourceMaps only in DevTools, hence not delivered to users, minimising JS bundle 
 == Linters
 
 - JSLint
-- Highly opinionted
+- Highly opinionated
 - JSHint
 - ESLint
 
@@ -144,7 +144,7 @@ If you can't make your own decision, then use a **preset**.
 But remember, presets brings OPINIONETED linting.
 
 
-=== Watching ESLint files
+==== Watching ESLint files
 
 - eslint-loader
 1. Re-lint all files upon save
@@ -156,7 +156,7 @@ But remember, presets brings OPINIONETED linting.
 4. Easily lints **Tests** and **build scripts**
 5. Displays clean message
 
-=== Linting experimental features
+==== Linting experimental features
 
 Supporting experimental JS features.
 - Native ESLInt
@@ -165,13 +165,13 @@ Supporting experimental JS features.
 - babel-eslint
 - Support experimental JS feature
 
-=== ESLint Workflow
+==== ESLint Workflow
 
 - ESLint recommended rules.(Can configure according to your needs)
 - eslint-watch
 `esw`
 
-=== `.eslintrc.json`
+==== `.eslintrc.json`
 `.eslintrc.json`:
 
 - `rules.no-console:` (An example)
