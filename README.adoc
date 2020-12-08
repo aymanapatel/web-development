@@ -1,11 +1,11 @@
-= JSWorkFlow Pluralsight: https://app.pluralsight.com/library/courses/javascript-development-environment/table-of-contents[Source]
+= Bootstrapping web applications (Node_
 :toc:
 :toclevels: 4
 :icons: font
 
 toc::[]
 
-NOTE: Check `original-copy` for original Pluralsight repo
+NOTE: Check https://github.com/aymanapatel/Web-Development-Bootstrapping/tree/original-copy[original-copy] for original Pluralsight repo
 
 == Development Web Server
 
