@@ -10,7 +10,9 @@ image::../img/bundle.PNG[Bundle]
 
 NOTE: Check this https://bundlers.tooling.report/[link] for consolidated information of all build tools.
 
+== Youtube
 
+https://www.youtube.com/watch?v=ahRNMEA4mWw[Webpack vs Browserify vs SystemJS vs require.js]
 
 
 == Browserify
