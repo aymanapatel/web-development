@@ -21,15 +21,20 @@ link:1_bootstrapping/README.adoc[Folder Link]
 
 link:2_angular/README.adoc[Folder Link]
 
+https://gitlab.com/aymanapatel/learning-webdev-path/-/tree/angular[Gitlab Link]
+
 === React
 
 
 link:2_react/README.adoc[Folder Link]
 
+https://gitlab.com/aymanapatel/learning-webdev-path/-/tree/react[Gitlab Link]
+
 === Vue
 
 link:2_vue/README.adoc[Folder Link]
 
+https://gitlab.com/aymanapatel/learning-webdev-path/-/tree/vue[Gitlab Link]
 
 == Language
 
