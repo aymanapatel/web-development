@@ -1,0 +1,7 @@
+= Typescript
+:toc:
+
+== Links
+
+- https://app.gitbook.com/@patelayman6/s/typescript/[Gitbook Doc]
+

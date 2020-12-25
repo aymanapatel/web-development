@@ -5,32 +5,38 @@
 
 toc::[]
 
-NOTE: Check https://github.com/aymanapatel/Web-Development-Bootstrapping/tree/original-copy[original-copy] for original Pluralsight repo
 
-== Development Web Server
-
+== Bootstrapping    
 
 
-== Automation
+NOTE: Check https://github.com/aymanapatel/web-development/tree/original-copy[original-copy] for original Pluralsight repo
+
+link:1_bootstrapping/README.adoc[Folder Link]
 
 
-== Transpiling
+== Languages
 
 
-== Bundling
+=== Angular
+
+link:2_angular/README.adoc[Folder Link]
+
+=== React
 
 
+link:2_react/README.adoc[Folder Link]
+
+=== Vue
+
+link:2_vue/README.adoc[Folder Link]
 
 
-== Linters
+== Language
 
+=== Javascript
 
-== Code Fomating
+link:language/javascript/README.adoc[Folder Link]
 
-== Testing
+=== Typescript
 
-== Project Structure [To be done]
-
-== CI
-
-== Production Deploy
+link:language/typescript/README.adoc[Folder Link]
