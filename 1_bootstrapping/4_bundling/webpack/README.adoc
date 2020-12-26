@@ -1,0 +1,98 @@
+= Webpack
+:toc:
+
+
+NOTE: Use `npx webpack` to run webpack from CLI. Better to use `npm run build` scripts.
+
+
+== Basic Webpack
+
+NOTE: This is for legacy web bundles having `<script>` imports. 
+
+Here, we have `<script>` importing **lodash**
+
+
+`src/index.js`: 
+
+```javascript
+function component() {
+  const element = document.createElement('div');
+
+  // Lodash, currently included via a script, is required for this line to work
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+  return element;
+}
+document.body.appendChild(component());
+```
+
+`index.html` :
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+  </head>
+  <body>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
+```
+
+== Bundle Webpack
+
+
+
+`src/index.js`: 
+
+```javascript
+
+import _ from 'lodash';
+function component() {
+  const element = document.createElement('div');
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+  return element;
+}
+document.body.appendChild(component());
+```
+
+`dist/index.html` :
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+  </head>
+  <body>
+    <script src="./main.js"></script>
+  </body>
+</html>
+```
+
+This creates `main.js` and `main.js.LICENSE.txt`
+
+
+== Bundler + Config
+
+
+Use `webpack.config.js` to configure. 
+
+`webpack.config.js`: 
+
+```javascript
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+};
+```

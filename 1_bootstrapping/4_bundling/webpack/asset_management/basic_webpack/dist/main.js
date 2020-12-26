@@ -1,0 +1,1 @@
+document.bosy.appendChild(function(){const e=document.createElement("div");return elements.innerHTML=_.join(["Hello","webpack"],""),e}());
