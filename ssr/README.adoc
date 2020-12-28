@@ -1,0 +1,10 @@
+= SSR in Node
+Repository to compare SSR Frameworks
+
+|===
+|SSR Framework|Frontend library/framework
+
+|NextJS|React
+|NuxtJS|Vue
+|NestJS|Angular
+|===
