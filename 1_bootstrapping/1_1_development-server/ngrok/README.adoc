@@ -1,0 +1,17 @@
+= ngrok example
+
+
+
+== Steps
+
+1. Run `npx nodemon` in this directory
+2. Run `ngrok http 80 ` where **ngrok.exe** (Windows) is inside `/assets`. This will give public URL to access 
+the `http-server` created in `index.js`
+
+
+== Security issues
+
+
+Since **ngrok** is a reverse tunnelling software, it has been subject to reverse-tunelling attack. Notably, the 
+https://www.zdnet.com/article/malicious-npm-package-opens-backdoors-on-programmers-computers/[npm twilio] 
+package hack. 
