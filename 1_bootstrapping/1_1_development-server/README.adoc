@@ -6,7 +6,7 @@
 toc::[]
 
 
-image::../img/tunnel.png[tunnel]
+
 
 
 Similar to Expo, we have BrowserSync dev server and LocalTunnel Remote Dev Environment
@@ -17,9 +17,11 @@ Similar to Expo, we have BrowserSync dev server and LocalTunnel Remote Dev Envir
 
 `lt --port 3000 --subdomain ayman`
 
-Works on different devices.
-Works on diffeent networks too.
-Hot Reloading present
+- Works on different devices.
+- Works on diffeent networks too.
+- Hot Reloading present
+
+image::../img/tunnel.png[tunnel]
 
 == https://ngrok.com/[ngrok]
 
