@@ -35,8 +35,29 @@ let boolean_f = false; // Type 'false' is not assignable to type 'true'.ts(2322)
 let number_a = 1234;
 let number_b = Infinity * 0.10;
 const number_c = 1234;
-console.log(typeof number_a);
-console.log(typeof number_b);
-console.log(typeof number_c);
+let number_d = 1234;
+let number_e = 1234.12;
+let number_f = 12; // Type '12' is not assignable to type '1234.12'.ts(2322)
 //end::numbertype[]
+//=============string=============
+//tag::stringtype[]
+let string_a = 'ayman';
+let string_b = 'billy';
+const string_c = 'chinmay';
+let string_d = 'zoom';
+let string_e = string_a + ' ' + string_b + string_c;
+let string_f = 'zoe'; // Error TS2322: Type 'zoe' is not assignable to type 'john'.ts
+//end::stringtype[]
+//=============symbol=============
+//tag::symboltype[]
+let symbol_a = Symbol('a'); // symbol
+let symbol_b = Symbol('b'); // symbol
+var symbol_c = symbol_a === symbol_b; // boolean
+let symbol_d = symbol_a + 'x'; // Error TS2469: The '+' operator cannot be applied to type 'symbol'.
+const symbol_e = Symbol('e'); // typeof e
+const symbol_f = Symbol('f'); // typeof f
+let symbol_g = Symbol('f'); // Error TS1332: A variable whose type is a 'unique symbol' type must be 'const'.
+let symbol_h = symbol_e === symbol_e; // boolean
+let symbol_i = symbol_e === symbol_f; // Error TS2367: This condition will always return 'false' since the types 'unique symbol' and 'unique symbol' have no overlap.
+//end::symboltype[]
 //# sourceMappingURL=typesofTypes.js.map

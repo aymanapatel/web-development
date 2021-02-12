@@ -1,0 +1,11 @@
+{
+    "files": [],
+    "references": [
+        {"path": "./ch03-AllAboutTypes"},
+        
+        {"path": "./ch09-backend-and-front-frameworks"}
+    ],
+    "compilerOptions": {
+        "noEmitOnError": false
+    }
+}

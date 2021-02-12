@@ -6,11 +6,6 @@
 
 == Types of Types
 
-[javascript]
-.typesOfTypes.ts
-----
-include::src/typesofTypes.ts[tags=anyType]
-----
 
 .Type of types
 [#table-type-of-types]

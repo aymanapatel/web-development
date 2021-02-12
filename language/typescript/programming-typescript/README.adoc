@@ -2,3 +2,173 @@
 Ayman Patel
 :toc:
 
+= Running and Building Typescript
+Ayman Patel
+:toc:
+
+
+
+== `tsconfig.json`
+
+
+=== Project references
+
+For mult-folder, create `tsconfig.json` in each sub-folder.
+
+Create root `tsconfig.json` as follows:
+
+```
+{
+    "files": [],
+    "references": [
+        {"path": "./folder_1"},
+        {"path": "./folder_2"}
+    ]
+}
+```
+
+and do `tsc --build` 
+
+NOTE: `noEmitOnError` not working. Ask on stackoveflow
+
+
+=== Poylfills
+
+==== Write your own polyfill
+
+==== Add popular polyfill
+
+1. https://npmjs.org/packages/core-js[`core.js`]
+
+2. https://babeljs.io/docs/babel-polyfill[`@babel/polyfill`]
+
+After adding the required polyfills, add all the the functions you have added polyfill. 
+Example, if you have added polyfill for `es2016.array.includes` AND running code on browser; we need DOM(`window` , `document` etc)
+
+[javascript]
+.tsconfig.json
+----
+{
+    "complilerOptions" : {
+        "lib" : ["es-2015", "es2016.array.include", "dom"]
+    }
+}
+----
+
+
+== Publish Typescript on NPM
+
+
+=== 1. `tsconfig.json`
+
+Gotchas:
+
+1. Be careful of which module format you compile to (`UMD`, `commonJS`, `ES2015`)
+2. Genearte type declarations (`*.d.ts`) so that other TS code can use your TS (`@types`)
+3. Generate sourceMaps to debug your own code.
+
+[javascript]
+.tsconfig.json
+----
+{
+    "complilerOptions" : {
+        "declaration": true, 
+        "module": "umd", // or commonjs, system. es2015, none
+        "sourceMaps": true
+        "target":"es2015"
+    }
+}
+----
+
+=== 2. `package.json`
+
+
+[javascript]
+.package.json
+----
+{
+    "name": "Ayman Typescript module",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": 'dist/index.d.ts',
+    "scripts": {
+        "prepublishonly": "tsc -d"
+    }
+}
+----
+
+
+== `amd` module
+
+For amd module system, it is better practice to give amd-module name so that traspiled JS code is name and not anonymous class
+
+
+.AMD Module
+[#table-type-of-types]
+|===
+|Typescript| Compiled Javascript
+
+a|
+
+**Without amd module name**
+
+[javascript]
+.JS wo AMD
+----
+export let LogService = {
+    log() {
+        //...
+    }
+}
+----
+
+
+
+a|
+
+[javascript]
+.TS wo AMD
+----
+define(['require', 'exports'], function(require, exports) {
+  exports.__esModule = true
+  exports.LogService = {
+    log() {
+      // ...
+    }
+  }
+})
+----
+
+a|
+
+**Without amd module name**
+
+[javascript]
+.JS with AMD
+----
+/// <amd-module name="LogService"  />
+export let LogService = {
+    log() {
+        //...
+    }
+}
+----
+
+
+
+a|
+
+[javascript]
+.TS with AMD
+----
+define('LoginService',['require', 'exports'], function(require, exports) {
+  exports.__esModule = true
+  exports.LogService = {
+    log() {
+      // ...
+    }
+  }
+})
+----
+
+|===
