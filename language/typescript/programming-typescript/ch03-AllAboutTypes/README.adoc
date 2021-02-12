@@ -1,0 +1,153 @@
+= About types
+:toc:
+
+
+
+
+== Types of Types
+
+[javascript]
+.typesOfTypes.ts
+----
+include::src/typesofTypes.ts[tags=anyType]
+----
+
+.Type of types
+[#table-type-of-types]
+|===
+|Type| Description | Bullet Points  | Code
+
+|`any`
+a| 
+- **Godfather of types**
+- **[red]#Use it as Last resort only#**
+- sdsd
+a|
+- dsd
+- fsf
+a|
+
+
+[javascript]
+.Correct any type
+----
+include::src/typesofTypes.ts[tags=anyType]
+----
+
+[javascript]
+.Compile error any type
+----
+include::src/typesofTypes.ts[tags=compileErroranyType]
+----
+
+|`unknown`
+a| 
+- Type-safe counterpart of `any` type
+
+a|
+You can only assign a `unknown` variable (let's say aVar) iff:
+
+1. If the variable `bVar: any` [i.e `aVar = bVar`]
+2. If `aVar` has type-check before asignment [i.e `if(typeOf(aVar) == boolean){aVar = cVar}` where `cVar: boolean`]
+a|
+
+
+[javascript]
+.Using unknown type
+----
+include::src/typesofTypes.ts[tags=unknowntypeusage]
+----
+
+
+|`boolean`
+a| 
+Gotchas:
+1. 
+
+a|
+
+a|
+
+
+[javascript]
+.Using boolean type
+----
+include::src/typesofTypes.ts[tags=booleantype]
+----
+
+
+|`number`
+a| 
+Types: 
+
+1. integers
+2. flats
+3. positives
+4. negatives
+5. Infinity
+6. NaN
+
+a|
+Another Type in typescript is `BigInt`. `int` supports 2^53; `BigInt` supports bigger
+
+----
+
+let bigint_a: bigint = 100n
+let bigint_b: bigint = 100 // Error TS2322: Type 100 not assignable to type `bigint`
+----
+
+[red]#`bigint` is not supported in JS Engine rn. So better to not use it for now#
+a|
+
+
+[javascript]
+.Using number type
+----
+include::src/typesofTypes.ts[tags=numbertype]
+----
+
+
+|`string`
+a| 
+
+
+a|
+
+a|
+
+
+[javascript]
+.Using string type
+----
+include::src/typesofTypes.ts[tags=stringtype]
+----
+
+|`symbol`
+a| 
+`symbol` was added in ES2015    
+
+TODO: Learn more
+a|
+
+a|
+
+
+[javascript]
+.Using symbol type
+----
+include::src/typesofTypes.ts[tags=symboltype]
+----
+
+|===
+
+
+== Type Literal
+
+> A type that represents a single vawlue and nothing else
+
+```javascript
+let a: true = true // Telling TS that a is not only just a boolean, but it is also of the value true
+```
+
+// TODO - Add link
+Learn type widening in chapter06-Advanced types

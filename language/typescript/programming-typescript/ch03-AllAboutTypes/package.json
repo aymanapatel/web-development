@@ -1,0 +1,16 @@
+{
+  "name": "programming-typescript-ch02",
+  "version": "1.0.0",
+  "description": "10000 feet overview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayman Patel",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.26",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.5"
+  }
+}
