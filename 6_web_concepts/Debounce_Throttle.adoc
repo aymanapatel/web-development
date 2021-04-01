@@ -1,0 +1,9 @@
+= Debounce and Throttle
+Ayman Patel
+:toc:
+:icons: font
+
+
+== Links
+
+1. https://www.telerik.com/blogs/debouncing-and-throttling-in-javascript[Telerik Kendo Blog]
