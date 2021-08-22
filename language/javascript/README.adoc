@@ -3,7 +3,10 @@
 :icons: font 
 
 
-== Links
+== Topics
 
-- 
+- Prototypal Inheritance (vs tradition OOP inheritance)
+- `async` vs `defer`
+- ASTs
+- `call`, `apply` and `bind`
 
