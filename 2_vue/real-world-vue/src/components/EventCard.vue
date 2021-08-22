@@ -1,18 +1,23 @@
 <template>
   <div class="event-card">
-    <!-- `msg` is From parent component `Home.vue` -->
-    <!-- <h1>{{ msg }}</h1> -->
+    <router-link
+      class="event-link"
+      :to="{ name: 'EventDetails', params: { id: event.id } }"
+    >
+      <!-- `msg` is From parent component `Home.vue` -->
+      <!-- <h1>{{ msg }}</h1> -->
 
-    <!-- Display event data -->
+      <!-- Display event data -->
 
-    <span>@ {{ event.time }} on {{ event.date }}</span>
-    <h1>{{ event.title }}</h1>
+      <span>@ {{ event.time }} on {{ event.date }}</span>
+      <h1>{{ event.title }}</h1>
+    </router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: "EventCard",
+  name: 'EventCard',
 
   props: {
     event: Object,
@@ -32,7 +37,7 @@ export default {
   //     },
   //   };
   // },
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -47,5 +52,9 @@ export default {
 .event-card:hover {
   transform: scale(1.01);
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.event-link {
+  color: #2c3e50;
+  text-decoration: none;
 }
 </style>

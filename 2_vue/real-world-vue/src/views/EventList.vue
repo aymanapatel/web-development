@@ -9,11 +9,11 @@
 
 <script>
 // @ is an alias to /src
-import EventCard from "@/components/EventCard.vue";
-import EventService from "@/services/EventService";
+import EventCard from '@/components/EventCard.vue'
+import EventService from '@/services/EventService'
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     EventCard,
   },
@@ -26,18 +26,18 @@ export default {
 
     EventService.getEvents()
       .then((response) => {
-        console.log(`events: ${response.data}`);
-        this.events = response.data;
+        console.log(`events: ${response.data}`)
+        this.events = response.data
       })
       .catch((error) => {
-        console.error(error);
-      });
+        console.error(error)
+      })
   },
 
   data() {
     return {
       events: null,
-    };
+    }
   },
 
   // Static Data
@@ -69,7 +69,7 @@ export default {
   //     ],
   //   };
   // },
-};
+}
 </script>
 
 <style scoped>
