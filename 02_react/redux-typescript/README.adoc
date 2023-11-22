@@ -1,0 +1,56 @@
+= React Redux
+Ayman Patel
+:toc: 
+:toc: icons
+
+
+
+
+== Links
+
+- https://www.youtube.com/watch?v=9zySeP5vH9c&t=1245s[Jason Redux Creator Link]
+
+
+
+== Show Note
+
+=== When to use Redux
+
+=== When NOT to use REDUX
+
+=== Alternatives to hooks
+
+- React's inbuilt `Context` API
+- https://mobx.js.org/README.html[MOBX]
+- https://xstate.js.org/[XState - JS State machine and Statecharts]: Has too much boilerplate code
+- GraohQL - *I'm suprised*
+- https://github.com/pmndrs/zustand[Github Link] & https://zustand.surge.sh/[Site Link] : Small & Scalable Bearbones state-management 
+
+
+=== Common React HOOKS
+
+- `useSelector`
+
+- `useDispatcher`
+
+
+
+=== https://redux-toolkit.js.org/rtk-query/overview[RTK Query]
+
+> RTK query can be used from React, Svelte, Vue, Angualr and even Vanilla JS
+
+State Management --> Data Fetching and Caching (React Query, SWR,..)
+
+React Redux has thus brought RTK QUery
+
+==== Trivia
+
+RTK query caches reseult for a minute.
+To reproduce go to `XHR` in **Network tab` and use select. It will not a new create fetch request for every select, RTK is smart enough to persist in Redux store (can check in Redux devtools). 
+
+=== History
+
+- Derived from Flux Architecture
+- Equivalents
+    - Angular Equivalent: `ngrx`
+    - Vue Equivalent: `vuex`

@@ -1,0 +1,24 @@
+= Typrscript NOBS
+Ayman Patel
+:toc: 
+:toc: icons
+
+
+
+== Links
+
+-  https://github.com/typescript-cheatsheets/react[Github React cheatsheet]
+- React Router is implemented using this https://www.youtube.com/watch?v=J6jzDfHoj-Y[youtube link(The Nerdy Canuck)]
+
+
+== Topics
+
+
+.Topics
+|===
+| Link| Topics
+|https://www.youtube.com/watch?v=gChqkchbn9o&list=PLNqp92_EXZBJYFrpEzdO2EapvU0GOJ09n&index=23[No BS TS #20 - Typescript/React - Setup and Properties]| Setup, Properties
+|||
+|===
+
+

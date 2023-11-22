@@ -1,0 +1,14 @@
+{
+  "name": "react-router-and-hooks-learning",
+  "version": "1.0.0",
+  "description": "An example of React Router copied from https://reacttraining.com/react-router/web/guides/quick-start.",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "4.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.3"
+  }
+}
