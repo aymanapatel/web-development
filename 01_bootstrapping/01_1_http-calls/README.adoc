@@ -13,6 +13,7 @@ toc::[]
 1. Node
 -  http
 - requuest
+
 2. Browser
 - XMLHTTPRequest
 - jQuery
@@ -21,6 +22,11 @@ toc::[]
 - fetch
 - Streamlined API.
 - Limited feature set
+
+3. Mocking
+- Mirage.js
+- Mock Service Worker
+
 3. Node & Browser
 - isomorphic-fetch
 -xhr (npm)
@@ -38,7 +44,7 @@ Why?
 
 == Polyfill
 
-You can add polyfill script tag (polyfill.io) on top of iindex.html to add polyfill
+You can add polyfill script tag (polyfill.io) on top of `index.html` to add polyfill
 
 == Mocking HTTP
 
@@ -51,7 +57,8 @@ Why?
 - Avoid inter-team bottlenecks
 
 How?
-- Nock
+
+- Use MSW or Mirage.js
 - Pointing **static JSON** to your API
 - Crete dev webserver
 - api-mock
