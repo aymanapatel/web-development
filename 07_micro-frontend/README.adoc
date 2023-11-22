@@ -1,0 +1,33 @@
+= Micro-FE Full App crash course
+Ayman Patel
+:toc:
+:icons: font 
+
+
+ERROR: https://www.youtube.com/watch?v=RonRwypIVaw[Course Link] 
+
+
+== READINGS
+
+
+=== Atomic Design by Brad Frost
+
+There are 5 design elements categorized to TWO categories (System and Product)
+
+
+1. [System] Atoms: Button, Text field
+2. [System] Molecules: Label text field
+3. [System] Organisms: State, API
+4. [Product] Templates
+5. [Product] Pages
+
+
+
+== SingleSPA
+
+
+MF is a webpack solution. MF cannot allow non-webpack React Vue architecture.
+
+ If you want build and framework agnostic; you can use https://single-spa.js.org/[Single SPA]
+
+ 
