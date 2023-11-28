@@ -1,0 +1,37 @@
+= Playwright
+
+== Commands
+
+- `npx playwright test`
+- `npx playwright test --ui`
+- `npx playwright test --debug`
+- `npx playwright show-report`
+
+== Installation
+
+
+=== Fedora (Non Ubuntu/Debian install)
+
+Playwright does not provide support for any Linux distro which is not Ubuntu and Debian.
+
+Instal of running the npx command (`npx playwright@latest`) with all browser and dependenciess as true; put is as false and then run the following commands:
+
+1. `npx playwright install`
+
+== Tracing
+
+
+https://playwright.dev/docs/trace-viewer#recording-a-trace-on-ci[Tracing] is the report geneartion feature ehich shocases screenshot, video and network tab.
+
+Available options to record a trace:
+
+- 'on-first-retry' - Record a trace only when retrying a test for the first time.
+- 'on-all-retries' - Record traces for all test retries.
+- 'off' - Do not record a trace.
+- 'on' - Record a trace for each test. (not recommended as it's performance heavy)
+- 'retain-on-failure' - Record a trace for each test, but remove it from successful test runs.
+
+== Visual/Snapshot testing
+
+
+> Copy from your previous git.
