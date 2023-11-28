@@ -1,0 +1,16 @@
+{
+  "name": "selenium-e2e-tests",
+  "version": "1.0.0",
+  "description": "Selenium E2E tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayman Patel",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^117.0.1",
+    "geckodriver": "^4.2.1",
+    "selenium-webdriver": "^4.15.0"
+  }
+}

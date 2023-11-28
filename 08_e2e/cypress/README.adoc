@@ -1,0 +1,10 @@
+= Cypress
+Ayman Patel
+:toc:
+
+
+== Installation and Opening
+
+
+1. `npm install`
+2. `npx cypress open`

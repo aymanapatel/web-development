@@ -1,0 +1,12 @@
+== Selenium
+Ayman Patel
+:toc:
+
+
+
+== Running
+
+1. `npm i`
+2. `cd test`
+3. `node helloWorld.js`
+
